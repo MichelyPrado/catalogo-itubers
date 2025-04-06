@@ -63,7 +63,7 @@ src/
 ├── bootstrap.ts            # Bootstrap do microfrontend (para Module Federation)
 ├── main.ts                 # Ponto de entrada da aplicação Angular
 └── index.html              # HTML principal da aplicação
-
+```
 
 ## 📦 Versões utilizadas
 Angular: v17.x  
