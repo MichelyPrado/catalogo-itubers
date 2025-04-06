@@ -48,7 +48,22 @@ A aplicação estará disponível em: http://localhost:4200
 - Responsividade: Design mobile-first com media queries e layout flexível usando Flexbox.
 - Separação de responsabilidades: O código está dividido em pastas por função, seguindo boas práticas de arquitetura Angular.
 
-<pre> ## 🧱 Estrutura do projeto ```plaintext src/ ├── app/ │ ├── catalogo/ # Componente principal do catálogo de produtos │ ├── lista-produtos/ # Lista de exibição dos produtos por categoria │ ├── models/ # Interfaces e tipos de dados dos produtos │ └── app.* # Componentes e arquivos principais da aplicação ├── assets/ │ └── images/ # Imagens dos produtos ├── styles.css # Estilos globais ├── bootstrap.ts # Bootstrap do microfrontend (para Module Federation) ├── main.ts # Ponto de entrada da aplicação Angular └── index.html # HTML principal da aplicação ``` </pre>
+## 🧱 Estrutura do projeto
+
+```plaintext
+src/
+├── app/
+│   ├── catalogo/           # Componente principal do catálogo de produtos
+│   ├── lista-produtos/     # Lista de exibição dos produtos por categoria
+│   ├── models/             # Interfaces e tipos de dados dos produtos
+│   └── app.*               # Componentes e arquivos principais da aplicação
+├── assets/
+│   └── images/             # Imagens dos produtos
+├── styles.css              # Estilos globais
+├── bootstrap.ts            # Bootstrap do microfrontend (para Module Federation)
+├── main.ts                 # Ponto de entrada da aplicação Angular
+└── index.html              # HTML principal da aplicação
+
 
 ## 📦 Versões utilizadas
 Angular: v17.x  
