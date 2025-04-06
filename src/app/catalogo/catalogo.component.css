@@ -1,0 +1,35 @@
+.catalogo-container {
+    padding: 20px;
+  }
+  
+  .produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .produto {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    width: 200px;
+    text-align: center;
+    background-color: #fefefe;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .produto img {
+    max-width: 100%;
+    border-radius: 4px;
+  }
+  
+  .preco {
+    font-weight: bold;
+    color: #2e7d32;
+  }
+  
+  .categoria {
+    font-style: italic;
+    color: #757575;
+  }
+  

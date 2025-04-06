@@ -1,59 +1,72 @@
-# CatalogoProdutos
+# 🛍️ Catálogo de Produtos - Microfrontend Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
+Este projeto é um **microfrontend** desenvolvido com Angular, que exibe um catálogo de produtos com imagens, preços e categorias. O módulo está preparado para futura integração com um **App Shell**, utilizando **Module Federation** do Webpack.
 
-## Development server
+## 🚀 Funcionalidades
 
-To start a local development server, run:
+- Listagem de produtos com:
+  - Nome
+  - Preço
+  - Imagem
+  - Categoria
+- Filtragem de produtos por categoria
+- Design responsivo
+- Arquitetura preparada para Module Federation
 
+## ✅ Como rodar o projeto
+
+### Pré-requisitos
+- Node.js (versão recomendada: 18.x ou superior)
+- Angular CLI (versão usada no projeto: Angular 17)
+- npm (vem com Node.js)
+- Git (opcional, caso for clonar o repositório)
+
+### Passo a passo
 ```bash
-ng serve
-```
+# Clone o repositório (se ainda não tiver clonado)
+git clone <url-do-repositório>
+cd catalogo-produtos
+# Instale as dependências
+npm install
+# Inicie a aplicação
+npm start
+A aplicação estará disponível em: http://localhost:4200
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+✅ O que foi feito
+- Catálogo de produtos com nome, imagem e preço.
+- Organização por categoria.
+- Layout responsivo, adaptável a dispositivos móveis.
+- Componentes independentes com Angular standalone.
+- Configuração com Webpack Module Federation.
+- Preparado para futura integração com App Shell.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-```bash
-ng generate component component-name
-```
+## 🧠 Decisões técnicas
+- Module Federation: Escolhido para permitir integração independente do microfrontend com um App Shell.
+- Standalone Components: Utilização de componentes standalone do Angular para melhor modularidade e simplicidade.
+- State Management: Gerenciamento simples de estado com serviços Angular (services/). Pode evoluir futuramente para NgRx ou outro estado global.
+- Responsividade: Design mobile-first com media queries e layout flexível usando Flexbox.
+- Separação de responsabilidades: O código está dividido em pastas por função, seguindo boas práticas de arquitetura Angular.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-```bash
-ng generate --help
-```
+## 🧱 Estrutura do projeto
+src/
+├── app/
+│   ├── catalogo/           # Componente principal do catálogo de produtos
+│   ├── lista-produtos/     # Lista de exibição dos produtos por categoria
+│   ├── models/             # Interfaces e tipos de dados dos produtos
+│   └── app.*               # Componentes e arquivos principais da aplicação
+├── assets/
+│   └── images/             # Imagens dos produtos
+├── styles.css              # Estilos globais
+├── bootstrap.ts            # Bootstrap do microfrontend (para Module Federation)
+├── main.ts                 # Ponto de entrada da aplicação Angular
+└── index.html              # HTML principal da aplicação
 
-## Building
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 📦 Versões utilizadas
+Angular: v17.x
+Node.js: v18.x (ou compatível)
+@angular-architects/module-federation: v17.x
+Webpack: integrado via Angular CLI

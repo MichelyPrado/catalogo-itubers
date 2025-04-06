@@ -1,0 +1,8 @@
+<h1>Catálogo de Produtos</h1>
+
+<label for="categoria">Filtrar por categoria:</label>
+<select [(ngModel)]="categoriaSelecionada" id="categoria">
+  <option *ngFor="let cat of categorias" [value]="cat">{{ cat }}</option>
+</select>
+
+<app-lista-produtos [produtos]="produtosFiltrados"></app-lista-produtos>
