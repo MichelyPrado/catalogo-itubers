@@ -21,7 +21,6 @@ Este projeto é um **microfrontend** desenvolvido com Angular, que exibe um cat�
 - npm (vem com Node.js)
 - Git (opcional, caso for clonar o repositório)
 
-
 ### Passo a passo
 ```bash
 # Clone o repositório (se ainda não tiver clonado)
@@ -32,9 +31,9 @@ npm install
 # Inicie a aplicação
 npm start
 A aplicação estará disponível em: http://localhost:4200
+```
 
-
-✅ O que foi feito
+## ✅ O que foi feito
 - Catálogo de produtos com nome, imagem e preço.
 - Organização por categoria.
 - Layout responsivo, adaptável a dispositivos móveis.
@@ -42,14 +41,12 @@ A aplicação estará disponível em: http://localhost:4200
 - Configuração com Webpack Module Federation.
 - Preparado para futura integração com App Shell.
 
-
 ## 🧠 Decisões técnicas
 - Module Federation: Escolhido para permitir integração independente do microfrontend com um App Shell.
 - Standalone Components: Utilização de componentes standalone do Angular para melhor modularidade e simplicidade.
 - State Management: Gerenciamento simples de estado com serviços Angular (services/). Pode evoluir futuramente para NgRx ou outro estado global.
 - Responsividade: Design mobile-first com media queries e layout flexível usando Flexbox.
 - Separação de responsabilidades: O código está dividido em pastas por função, seguindo boas práticas de arquitetura Angular.
-
 
 ## 🧱 Estrutura do projeto
 src/
@@ -65,9 +62,8 @@ src/
 ├── main.ts                 # Ponto de entrada da aplicação Angular
 └── index.html              # HTML principal da aplicação
 
-
 ## 📦 Versões utilizadas
-Angular: v17.x
-Node.js: v18.x (ou compatível)
-@angular-architects/module-federation: v17.x
+Angular: v17.x  
+Node.js: v18.x (ou compatível)  
+@angular-architects/module-federation: v17.x  
 Webpack: integrado via Angular CLI
