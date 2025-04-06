@@ -21,6 +21,7 @@ Este projeto é um **microfrontend** desenvolvido com Angular, que exibe um cat�
 - npm (vem com Node.js)
 - Git (opcional, caso for clonar o repositório)
 
+
 ### Passo a passo
 ```bash
 # Clone o repositório (se ainda não tiver clonado)
